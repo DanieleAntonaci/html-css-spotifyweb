@@ -188,13 +188,28 @@ SECTION ON THE RIGHRT
 }
 
 /* list of songs */
-
+.list-song{
+    flex-grow: 1;
+}
 .songs-category{
-    
-
     min-height: 200px;
 }
+.songs-category ul{
+    display: flex;
+    
+}
+.songs-category li{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
 
+}
+.songs-category img{
+    width: 100%;
+}
+.songs-category h5{
+    color: rgba(250, 250, 250, 0.5);
+}
 
 
 
