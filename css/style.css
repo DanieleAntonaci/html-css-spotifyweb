@@ -8,6 +8,10 @@
 }
 body{
     max-width: 1400px;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
 }
 
 
@@ -29,6 +33,7 @@ NAV BAR ON THE LEFT
 nav{
     width: 250px;
     height: 100%;
+    background-color: #000;
 
     display: flex;
     justify-content: space-between;
@@ -36,6 +41,11 @@ nav{
 }
 .home{
     height: 200px;
+    color: white;
+}
+.home .svg-logo{
+    padding: 10px 15px;
+    width: 83%;
 }
 .playlist{
     height: calc(100% - 300px);
@@ -43,7 +53,22 @@ nav{
 .user{
     height: 100px;
 }
-
+.home .svg img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.home .svg{
+    padding: 4px 15px;
+}
+.home a{
+    color: white;
+    display: block;
+}
+.home .element-select{
+    border-left: 3px solid #adff2f;
+    padding-left: 12px;
+}
 
 /********************** 
 SECTION ON THE RIGHRT
@@ -51,6 +76,7 @@ SECTION ON THE RIGHRT
 .menu-song{
     width: calc(100% - 250px);
     height: 100%;
+    background-color: #141922;
     overflow: auto;
 }
 
@@ -79,19 +105,6 @@ SECTION ON THE RIGHRT
 }
 
 
-/* DEBUG */
-main{
-    background-color: blueviolet;
-}
-nav{
-background-color: aqua;
-}
-.menu-song{
-    background-color: chartreuse;
-}
-.border{
-    border: 2px solid black;
-}
 
 
 /********************** 
@@ -100,6 +113,7 @@ background-color: aqua;
 .player{
     height: 100px;
     width: 100%;
+    background-color: #282828;
 
     display: flex;
     justify-content: space-between;
@@ -117,8 +131,12 @@ background-color: aqua;
     flex-grow: 1;
 }
 
-/* DEBUG */
-.player{
-    background-color: beige;
-}
 
+
+
+
+
+/* DEBUG */
+.border{
+    border: 2px solid white;
+}
