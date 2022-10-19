@@ -6,29 +6,77 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    max-width: 1400px;
+}
 
 
-
-/********************** 
-        MAIN
-***********************/
+/*********************************** 
+                MAIN
+***********************************/
 main{
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     width: 100%;
     overflow-x: auto;
 
     display: flex;
 }
+
+
+/********************** 
+NAV BAR ON THE LEFT
+***********************/
 nav{
-    width: 300px;
+    width: 250px;
     height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
-#menu-song{
-    flex-grow: 1;
-    height: 100%;
+.home{
+    height: 200px;
+}
+.playlist{
+    height: calc(100% - 300px);
+}
+.user{
+    height: 100px;
 }
 
 
+/********************** 
+SECTION ON THE RIGHRT
+***********************/
+.menu-song{
+    width: calc(100% - 250px);
+    height: 100%;
+    overflow: auto;
+}
+
+/* upper apgrade */
+.upgrade{
+    height: 100px;
+    width: 100%;
+    opacity: .5;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+/* category */
+.category{
+    /* debug */
+    height: 50px;
+}
+
+/* list of songs */
+
+.songs-category{
+    
+    /* debug */
+    min-height: 200px;
+    width: 100%;
+}
 
 
 /* DEBUG */
@@ -38,23 +86,39 @@ main{
 nav{
 background-color: aqua;
 }
-#menu-song{
+.menu-song{
     background-color: chartreuse;
 }
+.border{
+    border: 2px solid black;
+}
+
+
 /********************** 
         PLAYER
 ***********************/
-#player{
-    height: 150px;
+.player{
+    height: 100px;
     width: 100%;
+
+    display: flex;
+    justify-content: space-between;
 }
 
+.name-song{
+    flex-grow: 1;
+}
 
+.player-setting{
+    flex-grow: 2;
+}
 
-
+.volume-setting{
+    flex-grow: 1;
+}
 
 /* DEBUG */
-#player{
+.player{
     background-color: beige;
 }
 
