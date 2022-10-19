@@ -167,18 +167,32 @@ SECTION ON THE RIGHRT
 
 
 /* category */
-.category{
-    /* debug */
-    height: 50px;
+.category ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.category ul li{
+    padding: 20px 10px;
+    color: rgba(250, 250, 250, 0.5);
+    position: relative;
+
+}
+.category i{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,10%);
+    font-size: 40px;
+    color: #adff2f;
 }
 
 /* list of songs */
 
 .songs-category{
     
-    /* debug */
+
     min-height: 200px;
-    width: 100%;
 }
 
 
