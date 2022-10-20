@@ -39,6 +39,7 @@ NAV BAR ON THE LEFT
 nav{
     width: 250px;
     height: 100%;
+    min-height: 600px;
     background-color: #000;
 
     display: flex;
@@ -64,9 +65,7 @@ nav i, nav img{
 .playlist{
     height: calc(100% - 300px);
 }
-.user{
-    height: 100px;
-}
+
 .home .svg img{
     width: 30px;
     margin-right: 5px;
@@ -91,7 +90,6 @@ nav i, nav img{
 /* plylist */
 nav .playlist{
     padding: 15px 15px;
-    overflow: auto;
 }
 .playlist .create-playlist i{
     font-size: 30px;
@@ -99,6 +97,10 @@ nav .playlist{
     color: #000;
     padding: 5px;
     margin: 15px 10px 15px 0;
+}
+.playlist ul{
+    height: calc(100% - 100px);
+    overflow-y: auto;
 }
 .playlist li{
     line-height: 40px;
@@ -110,6 +112,8 @@ nav .playlist{
 /* user */
 .user{
     padding: 0 15px;
+    background-color: #000;
+    height: 100px;
 }
 .user .download img{
     width: 20px;
