@@ -250,6 +250,7 @@ SECTION ON THE RIGHRT
 .player{
     height: 100px;
     width: 100%;
+    min-width: 500px;
     background-color: #282828;
 
     display: flex;
@@ -259,13 +260,14 @@ SECTION ON THE RIGHRT
 
 /* song */
 .song-played{
-    width: 25%;
+    width: 23vw;
     display: flex;
 
     align-items: center;
 }
 .song-played img{
-    height: 60%;
+    max-height: 60%;
+    height: 6vw;
     margin: auto 15px;
 }
 .song-played .title{
@@ -296,7 +298,7 @@ SECTION ON THE RIGHRT
 }
 .btn-player i{
     font-size: 18px;
-    padding: 10px;
+    padding: 15px;
 }
 .btn-player .fa-circle-play{
     font-size: 30px;
@@ -307,26 +309,46 @@ SECTION ON THE RIGHRT
 .time-row span{
     font-size: 11px;
 }
-.song-length{
-    width: 400px;
+.song.bar{
+    width: 30vw;
+    
+}
+.bar{
     height: 4px;
-    background-color: white;
-    opacity: .3;
+    background-color: rgba(250, 250, 250, 0.3);
+    border-radius: 20px;
 
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 2px ;
 
+    position: relative;
+}
+.level.inner-bar{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 20%;
+    height: 4px;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 
 /*  Volume setting */
 .volume-setting{
-    width: 25%;
+    width: 23vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-
+.volume.bar{
+    width: 10vw;
+}
+.volume-setting i{
+    padding: 0 .5vw;
+}
 
 
 
@@ -355,6 +377,7 @@ SECTION ON THE RIGHRT
     .songs-category li{
         width: calc(50% - 10px);
     }
+
 }
 
  @media screen and (max-width:600px) {
@@ -384,4 +407,8 @@ SECTION ON THE RIGHRT
     .user .download{
         border-bottom: 0;
     }
+    .song-played .title {
+
+        padding-right: 3px;
+      }
  }
