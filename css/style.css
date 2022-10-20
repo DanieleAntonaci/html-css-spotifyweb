@@ -278,11 +278,28 @@ SECTION ON THE RIGHRT
 .fa-heart{
     padding-right: 15px;
 }
-
+/* player setting */
 .player-setting{
-    flex-grow: 3;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* upper side */
+.btn-player{
+    display: flex;
+    justify-content: center;
+}
+.song-length{
+    width: 400px;
+    height: 2px;
+    background-color: #a3a3a3;
+    display: inline-block;
 }
 
+
+/*  Volume setting */
 .volume-setting{
     flex-grow: 1;
 }
