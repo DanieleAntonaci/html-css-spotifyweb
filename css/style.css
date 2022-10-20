@@ -238,7 +238,10 @@ SECTION ON THE RIGHRT
     color: rgba(250, 250, 250, 0.5);
     padding: 5px ;
 }
-
+.artists{
+    object-fit: cover;
+    border-radius: 50%;
+}
 
 
 /********************** 
