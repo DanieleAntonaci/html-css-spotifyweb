@@ -203,7 +203,9 @@ SECTION ON THE RIGHRT
     font-size: 40px;
     color: #adff2f;
 }
-
+.icon{
+    display: none;
+}
 
 
 /* list of songs */
@@ -231,7 +233,16 @@ SECTION ON THE RIGHRT
     width: 200px;
     padding: 10px;
     text-align: center;
+    position: relative;
+}
+.songs-category li .icon{
+    color: white;
+    font-size: 3vw;
 
+    position: absolute;
+    top: 6vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .songs-category img{
     width: 100%;
@@ -376,11 +387,19 @@ SECTION ON THE RIGHRT
     .songs-category li{
         width: calc(25% - 10px);
     }
+    .songs-category li:hover .icon{
+        top: 9vw;
+        font-size: 5vw;
+    }
 }
 @media screen and (max-width:700px){
 
     .songs-category li{
         width: calc(50% - 10px);
+    }
+    .songs-category li:hover .icon {
+        top: 16vw;
+        font-size: 8vw;
     }
 
 }
@@ -416,6 +435,10 @@ SECTION ON THE RIGHRT
 
         padding-right: 3px;
       }
+      .songs-category li:hover .icon {
+        top: 21vw;
+        font-size: 11vw;
+      }
  }
 
 
@@ -447,3 +470,10 @@ a:hover,
     font-size: 40px;
     padding: 10px;
 }
+.songs-category li:hover .icon{
+    display: block;
+
+  }
+  .songs-category li:hover img{
+    opacity: .5;
+  }
