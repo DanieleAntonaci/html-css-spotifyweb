@@ -41,6 +41,7 @@ nav{
     height: 100%;
     min-height: 600px;
     background-color: #000;
+    z-index: 200;
 
     display: flex;
     justify-content: space-between;
@@ -141,6 +142,9 @@ nav .playlist{
     border-radius: 50%;
     margin-right: 20px;
 }
+.user .download img{
+    opacity: .5;
+}
 
 
 
@@ -172,7 +176,7 @@ SECTION ON THE RIGHRT
     border: 2px solid white;
     border-radius: 20px;
     padding: 10px 30px;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 
@@ -186,9 +190,10 @@ SECTION ON THE RIGHRT
 }
 .category ul li{
     padding: 20px 10px;
-    color: rgba(250, 250, 250, 0.5);
     position: relative;
-
+}
+.category li a{
+    color: rgba(250, 250, 250, 0.5);
 }
 .category i{
     position: absolute;
@@ -275,7 +280,10 @@ SECTION ON THE RIGHRT
     padding-right: 30px;
 }
 .song-played h5{
-    opacity: .6;
+    color: rgba(250, 250, 250, 0.5);
+}
+.player i{
+    color: rgba(250, 250, 250, 0.7);
 }
 .fa-heart{
     padding-right: 15px;
@@ -361,9 +369,6 @@ SECTION ON THE RIGHRT
             RESPONSIVE
  ********************************/
 
-
-
-
 @media screen and (max-width:1100px){
     .songs-category ul{
         flex-wrap: wrap;
@@ -412,3 +417,33 @@ SECTION ON THE RIGHRT
         padding-right: 3px;
       }
  }
+
+
+
+
+ /************************************
+            HOVER
+ *************************************/
+
+.upgrade a:hover{
+    font-size: 18px;
+    margin-right: 16px;
+}
+a:hover,
+.create-playlist:hover,
+.category li:hover a,
+.song-played h5:hover,
+.player i:hover {
+    color: rgba(250, 250, 250, 1);
+}
+.create-playlist:hover i{
+    background-color: white;
+}
+
+.song-played h5:hover{
+    text-decoration: underline;
+}
+.btn-player .fa-circle-play:hover{
+    font-size: 40px;
+    padding: 10px;
+}
