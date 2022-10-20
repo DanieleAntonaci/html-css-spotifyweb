@@ -53,6 +53,12 @@ nav a, nav{
 nav i, nav img{
     vertical-align: middle;
 }
+.svg.hidden{
+    display: none;
+}
+.home .svg.hidden img{
+    opacity: 1;
+}
 
 /* home */
 .home{
@@ -250,3 +256,37 @@ SECTION ON THE RIGHRT
 .border{
     border: 2px solid white;
 }
+
+
+/********************************* 
+            RESPONSIVE
+ ********************************/
+
+ @media screen and (max-width:500px) {
+
+    /* NAV BAR */
+    nav{
+        width: 60px;
+    }
+    .menu-song{
+        width: calc(100% - 60px);
+    }
+    nav .playlist, 
+    .home .svg span, 
+    .svg-logo,
+    .user div span{
+        display: none;
+    }
+    .home .svg img,.svg.hidden{
+        display: block;
+        padding-top: 12px;
+    }
+    .home .element-select.svg{
+        border-left: 0;
+        padding-left: 15px;
+        opacity: .5;
+    }
+    .user .download{
+        border-bottom: 0;
+    }
+ }
