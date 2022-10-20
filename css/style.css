@@ -254,14 +254,33 @@ SECTION ON THE RIGHRT
 
     display: flex;
     justify-content: space-between;
+
 }
 
-.name-song{
+/* song */
+.song-played{
     flex-grow: 1;
+    display: flex;
+
+    align-items: center;
+}
+.song-played img{
+    height: 60%;
+    margin: auto 15px;
+}
+.song-played .title{
+    font-size: 12px;
+    padding-right: 30px;
+}
+.song-played h5{
+    opacity: .6;
+}
+.fa-heart{
+    padding-right: 15px;
 }
 
 .player-setting{
-    flex-grow: 2;
+    flex-grow: 3;
 }
 
 .volume-setting{
