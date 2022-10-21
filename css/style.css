@@ -164,8 +164,11 @@ SECTION ON THE RIGHRT
     height: 100px;
     width: 100%;
     background-color: rgba(0, 0, 0, .7);
+    z-index: 100;
+
     position: sticky;
     top: 0;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -246,6 +249,7 @@ SECTION ON THE RIGHRT
 }
 .songs-category img{
     width: 100%;
+    z-index: 50;
 }
 .songs-category  h4{
     padding: 10px 2px 5px 2px;
@@ -310,7 +314,7 @@ SECTION ON THE RIGHRT
     align-items: center;
 }
 
-/* upper side */
+/* cenetr upper side */
 .btn-player{
     display: flex;
     align-items: center;
@@ -332,6 +336,7 @@ SECTION ON THE RIGHRT
     width: 30vw;
     
 }
+/* center player bar */
 .bar{
     height: 4px;
     background-color: rgba(250, 250, 250, 0.3);
@@ -340,18 +345,23 @@ SECTION ON THE RIGHRT
     display: inline-block;
     margin: 0 10px 2px ;
 
-    position: relative;
 }
 .level.inner-bar{
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: relative;
 
     width: 20%;
     height: 4px;
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+.level i{
+    display: none;
+    color: rgba(250, 250, 250, 1);
+
+    position: absolute;
+    right: -6px;
+    top: -6px;
 }
 
 
@@ -365,7 +375,7 @@ SECTION ON THE RIGHRT
 .volume.bar{
     width: 10vw;
 }
-.volume-setting i{
+.volume-setting>i{
     padding: 0 .5vw;
 }
 
@@ -473,7 +483,17 @@ a:hover,
 .songs-category li:hover .icon{
     display: block;
 
-  }
-  .songs-category li:hover img{
-    opacity: .5;
-  }
+}
+.songs-category li:hover img{
+opacity: .5;
+}
+
+.bar:hover .level.inner-bar,
+.bar:hover .volume.level.inner-bar{
+    background-color: #adff2f;
+
+}
+.bar:hover .level.inner-bar i,
+.bar:hover .volume.level.inner-bar i{
+    display: block;
+}
