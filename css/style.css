@@ -227,18 +227,18 @@ SECTION ON THE RIGHRT
     opacity: .5;
     font-weight: 400;
 }
-.songs-category ul{
+.songs-category>div{
     display: flex;
     padding-left: 10px;
     
 }
-.songs-category li{
+.songs-category>div>div{
     width: 200px;
     padding: 10px;
     text-align: center;
     position: relative;
 }
-.songs-category li .icon{
+.songs-category>div>div .icon{
     color: white;
     font-size: 3vw;
 
